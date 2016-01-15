@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="assets_backend" name="custom bar assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/dodgerblue_backend_theme/static/src/css/main.css"/>
+		<script type="text/javascript" src="/dodgerblue_backend_theme/static/src/js/menu.js"></script>
+            </xpath>
+        </template>
+	<template id="menu_webclient_bootstrap_dodgerblue_backend_theme" inherit_id="web.webclient_bootstrap">
+            <xpath expr="//div[@class='navbar-header']" position="inside">
+                <ul class="ul_toggle_leftmenu">
+                    <li class="nav navbar-nav navbar-left toggle_leftmenu">
+                        <span class="fa fa-bars fa-lg"></span>
+                    </li>
+                </ul>
+            </xpath>
+        </template>
+    </data>
+</openerp>
+
