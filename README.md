@@ -1,1 +1,1 @@
-# themes
+# Odoo themes
